@@ -1,5 +1,6 @@
 package com.example.data_jpa.User.entity;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -28,9 +29,9 @@ public class User {
 
 
   @CreationTimestamp //생성 시간 기록
-  private LocalDateTime createdAt;
+  private LocalDate createdAt;
   @UpdateTimestamp //수정 시간 기록
-  private LocalDateTime updatedAt;
+  private LocalDate updatedAt;
 
   @Version //동시성 제어를 위한 낙관적 락
   private Long version;
